@@ -86,4 +86,3 @@ let firstChar= str.charAt(0);
 let extractedWord= str.slice(4);
 console.log(firstChar); // "B"
 console.log(extractedWord); // "camp"
-
