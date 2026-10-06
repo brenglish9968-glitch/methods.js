@@ -63,41 +63,27 @@ Complete the following tasks and assign the results to the specified variables. 
   - Retrieve the first character of the trimmed string using charAt and assign the result to a variable named firstCharacter.
   - Extract the word "Bootcamp" from the string using slice and assign the result to a variable named extractedBootcamp.
 
-*/
 
-//Starter Code
-let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
-// 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
-let endsWithToday; // Your code here
+let text= "Learning JavaScript is fun!";
+let hasJavaScript = text.includes("JavaScript");
+let funPosition = text.indexOf("fun");
+console.log(hasJavaScript); // true
+console.log(funPosition); // 21
 
-// 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
-let replacedString; // Your code here
 
-// 3. Breaking Apart
-let wordsArray; // Your code here
+let originalString = " CODE BOOTCAMP ";
+let transformedString= originalString.trim().toLowerCase();
+let finalResult=transformedString.replace("bootcamp", "JavaScript");
+console.log(finalResult); // "code javascript"
 
-// 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+let sentence = "Coding is fun and educational";
+let wordsArray = sentence.split(" ");
+console.log(wordsArray); // ["Coding", "is", "fun", "and", "educational"]
 
-// Log all results
-console.log({
-  hasJavaScript,
-  codingPosition,
-  startsWithWelcome,
-  endsWithToday,
-  lowercaseString,
-  uppercaseString,
-  trimmedString,
-  replacedString,
-  wordsArray,
-  firstCharacter,
-  extractedBootcamp,
-});
+let str= "Bootcamp";
+let firstChar= str.charAt(0);
+let extractedWord= str.slice(4);
+console.log(firstChar); // "B"
+console.log(extractedWord); // "camp"
+
